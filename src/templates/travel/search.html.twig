@@ -1,0 +1,19 @@
+<form method="GET" action="{{ path('app_search_travel') }}">
+    <div class="form-group">
+        <label for="destination">Destination:</label>
+        <input type="text" class="form-control" id="destination" name="destination" placeholder="Enter destination">
+    </div>
+    <div class="form-group">
+        <label for="date">Travel Dates:</label>
+        <input type="date" class="form-control" id="date" name="date">
+    </div>
+    <div class="form-group">
+        <label for="travel-type">Travel Type:</label>
+        <select class="form-control" id="travel-type" name="travel-type">
+            <option value="flight">Flight</option>
+            <option value="train">Train</option>
+            <option value="bus">Bus</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
